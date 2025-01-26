@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bonus Task</title>
+  </head>
+  <body>
+    <h1 style="text-align: center; margin-top: 60px">Bonus Task</h1>
+    <div style="display: flex; justify-content: center; justify-items: center">
+      <form
+        style="
+          height: 60vh;
+          border: 2px solid gray;
+          border-radius: 5px;
+          padding-top: 10px;
+          padding-left: 10px;
+          padding-right: 10px;
+          display: flex;
+          justify-items: center;
+          flex-direction: column;
+        "
+        action=""
+      >
+        <div style="display: flex; margin-top: 20px">
+          <label style="font-size: 20px" for="fname">Name:</label><br />
+          <input
+            style="margin-left: 5px; width: 350px"
+            type="text"
+            id="fname"
+            name="fname"
+            value="Please Write your name"
+          /><br />
+        </div>
+
+        <div style="display: flex; margin-top: 20px">
+          <label style="font-size: 20px" for="fname">Email:</label><br />
+          <input
+            style="margin-left: 5px; width: 350px"
+            type="text"
+            id="fname"
+            name="fname"
+            value="Please write your email"
+          /><br />
+        </div>
+
+        <div style="display: flex; margin-top: 15px">
+          <label style="font-size: 20px" for="fname">Gender: </label><br />
+          <label style="font-size: 20px; margin-left: 5px" for="fname"
+            >Male
+          </label>
+          <input
+            style="margin-left: 5px"
+            type="radio"
+            id="fname"
+            name="fname"
+            value="Please write your email"
+          />
+          <label style="font-size: 20px; margin-left: 5px" for="fname"
+            >Female
+          </label>
+          <input
+            style="margin-left: 5px"
+            type="radio"
+            id="fname"
+            name="fname"
+            value="Please write your email"
+          />
+        </div>
+
+        <div style="display: flex; margin-top: 15px">
+          <label style="font-size: 20px" for="cars">Blood Group:</label>
+          <select style="width: 45vh; margin-left: 5px" name="cars" id="cars">
+            <option value="volvo">A+</option>
+            <option value="volvo">A-</option>
+            <option value="saab">B+</option>
+            <option value="saab">B-</option>
+            <option value="opel">O+</option>
+            <option value="opel">O-</option>
+            <option value="opel">AB+</option>
+            <option value="opel">AB-</option>
+          </select>
+        </div>
+
+        <input style="margin-top: 20px" type="submit" value="Submit" />
+      </form>
+    </div>
+  </body>
+</html>
