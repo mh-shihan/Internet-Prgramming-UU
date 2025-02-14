@@ -5,6 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Simple Calculator</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      function calculate(operator) {
+        let num1 = parseFloat(document.getElementById("num1").value);
+        let num2 = parseFloat(document.getElementById("num2").value);
+        let result;
+        if (isNaN(num1) || isNaN(num2)) {
+          result = "Invalid Input";
+        } else {
+          switch (operator) {
+            case "+":
+              result = num1 + num2;
+              break;
+            case "-":
+              result = num1 - num2;
+              break;
+            case "*":
+              result = num1 * num2;
+              break;
+            case "/":
+              result = num2 !== 0 ? num1 / num2 : "Cannot divide by zero";
+              break;
+          }
+        }
+        document.getElementById("result").textContent = result;
+      }
+    </script>
   </head>
   <body
     class="flex items-center justify-center min-h-screen bg-gradient-to-r from-blue-500 to-purple-500 text-white"
@@ -13,12 +39,14 @@
       <h1 class="text-2xl font-bold text-center mb-4">Simple Calculator</h1>
       <input
         type="number"
+        required!
         id="num1"
         class="w-full p-2 border border-gray-300 rounded mb-2"
         placeholder="Number 1"
       />
       <input
         type="number"
+        required!
         id="num2"
         class="w-full p-2 border border-gray-300 rounded mb-4"
         placeholder="Number 2"
