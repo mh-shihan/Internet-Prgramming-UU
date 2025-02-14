@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Simple Calculator</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Calculate Function -->
     <script>
       function calculate(operator) {
         let num1 = parseFloat(document.getElementById("num1").value);
@@ -37,6 +38,7 @@
   >
     <div class="bg-white p-6 rounded-lg shadow-lg w-80 text-black">
       <h1 class="text-2xl font-bold text-center mb-4">Simple Calculator</h1>
+      <!-- Input Field - 1 -->
       <input
         type="number"
         required!
@@ -44,6 +46,7 @@
         class="w-full p-2 border border-gray-300 rounded mb-2"
         placeholder="Number 1"
       />
+      <!-- Input Filed -2 -->
       <input
         type="number"
         required!
@@ -51,6 +54,7 @@
         class="w-full p-2 border border-gray-300 rounded mb-4"
         placeholder="Number 2"
       />
+      <!-- Addition, Subtraction, Multiplication and Division Button -->
       <div class="flex justify-between mb-4">
         <button
           onclick="calculate('+')"
@@ -77,6 +81,7 @@
           ÷
         </button>
       </div>
+      <!-- Result Field -->
       <div
         id="result"
         class="text-center text-xl font-bold p-2 bg-gray-200 rounded"
