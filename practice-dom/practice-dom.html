@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Practice DOM</title>
+  </head>
+
+  <body>
+    <p id="p1">Hello World!</p>
+    <label for="input1">Name: </label>
+    <input onchange="handleOnChange()" type="number" id="input1" />
+    <br />
+    <br />
+    <button onclick="handleOnClick()" id="btn">Click Me</button>
+    <p id="p2">Result</p>
+  </body>
+
+  <!-- JS -->
+  <script>
+    document.getElementById("p1").innerHTML = "Hello Everyone";
+    const handleOnChange = () => {
+      console.log(document.getElementById("input1").value);
+    };
+
+    const handleOnClick = () => {
+      const input1 = parseInt(document.getElementById("input1").value);
+      document.getElementById("p2").innerText = input1 + 10;
+    };
+  </script>
+</html>

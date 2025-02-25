@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Styled HTML Page</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        padding: 20px;
+        margin: 0;
+      }
+      .navbar {
+        background: #af7ac5;
+        padding: 15px;
+        text-align: center;
+      }
+      .navbar a {
+        color: white;
+        text-decoration: none;
+        margin: 0 15px;
+        font-size: 18px;
+      }
+      h1 {
+        color: #333;
+        text-align: center;
+      }
+      p {
+        color: #666;
+        font-size: 16px;
+      }
+      .container {
+        background: white;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      input,
+      select,
+      textarea,
+      button {
+        width: 100%;
+        padding: 10px;
+        margin: 10px 0;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+      }
+      table,
+      th,
+      td {
+        border: 1px solid black;
+        padding: 8px;
+        text-align: left;
+      }
+      .btn {
+        background: #af7ac5;
+        color: white;
+        cursor: pointer;
+      }
+      .btn:hover {
+        background: #af7ac5;
+      }
+      .footer {
+        background: #333;
+        color: white;
+        text-align: center;
+        padding: 10px;
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="navbar">
+      <a href="#">Home</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <div class="container">
+      <h1>Welcome to My Web Page</h1>
+      <p>
+        This is a sample web page with various HTML elements styled using
+        internal CSS.
+      </p>
+
+      <form>
+        <label for="name">Name:</label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          placeholder="Enter your name"
+        />
+
+        <label for="email">Email:</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Enter your email"
+        />
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" />
+
+        <label for="gender">Gender:</label>
+        <select id="gender" name="gender">
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+          <option value="other">Other</option>
+        </select>
+
+        <label for="message">Message:</label>
+        <textarea
+          id="message"
+          name="message"
+          rows="4"
+          placeholder="Enter your message"
+        ></textarea>
+
+        <button type="submit" class="btn">Submit</button>
+      </form>
+
+      <h2>Sample Table</h2>
+      <table>
+        <tr>
+          <th>ID</th>
+          <th>Name</th>
+          <th>Age</th>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>Razzak</td>
+          <td>24</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Shihan</td>
+          <td>25</td>
+        </tr>
+      </table>
+
+      <h2>Ordered List</h2>
+      <ol>
+        <li>First Item</li>
+        <li>Second Item</li>
+        <li>Third Item</li>
+      </ol>
+
+      <h2>Unordered List</h2>
+      <ul>
+        <li>Item One</li>
+        <li>Item Two</li>
+        <li>Item Three</li>
+      </ul>
+    </div>
+    <div class="footer">&copy; 2025 My Website | All Rights Reserved</div>
+  </body>
+</html>
