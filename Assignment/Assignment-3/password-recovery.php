@@ -27,7 +27,7 @@
                 class="w-full p-2 border border-gray-300 rounded mb-6" required>
 
             <button type="submit"
-                class="w-full bg-lime-500 text-white py-2 rounded hover:bg-lime-600 transition">Login</button>
+                class="w-full bg-lime-500 text-white py-2 rounded hover:bg-lime-600 transition">Recover Password</button>
         </form>
     </div>
 </div>
