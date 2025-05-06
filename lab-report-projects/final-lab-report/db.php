@@ -20,5 +20,6 @@ CREATE TABLE IF NOT EXISTS student_info (
     batch VARCHAR(20),
     section VARCHAR(20)
 )";
+$conn->query($createTable);
 
 ?>
